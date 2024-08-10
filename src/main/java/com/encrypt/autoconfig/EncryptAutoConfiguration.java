@@ -1,5 +1,7 @@
-package com.encrypt;
+package com.encrypt.autoconfig;
 
+import com.encrypt.core.EncryptResponse;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -13,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
  * @Version: v1.0
  */
 @Configuration
-@ComponentScan("com.encrypt")
+@ComponentScan("com.encrypt.autoconfig")
 public class EncryptAutoConfiguration {
 
 }
