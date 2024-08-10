@@ -15,10 +15,7 @@ import org.springframework.context.annotation.Configuration;
  * @Create: 2024/8/10 - 15:12
  * @Version: v1.0
  */
-@Data
-@Configuration
 @ConfigurationProperties(prefix = "spring.encrypt")
-@ComponentScan
 public class EncryptProperties {
 
     private final static String DEFAULT_KEY = "this.default.key";
@@ -31,10 +28,5 @@ public class EncryptProperties {
 
     public void setKey(String key) {
         this.key = key;
-    }
-
-    @Bean
-    public EncryptProperties encryptProperties() {
-        return new EncryptProperties();
     }
 }

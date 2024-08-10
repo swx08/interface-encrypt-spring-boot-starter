@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.encrypt.autoconfig.EncryptProperties
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.encrypt.EncryptAutoConfiguration
