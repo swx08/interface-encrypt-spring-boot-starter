@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.encrypt</groupId>
     <artifactId>interface-encrypt-spring-boot-starter</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5.RELEASE</version>
     <name>interface-encrypt-spring-boot-starter</name>
     <description>interface-encrypt-spring-boot-starter</description>
     <properties>
