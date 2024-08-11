@@ -1,9 +1,9 @@
-package com.encrypt.core;
+package com.encrypt.starter.core;
 
-import com.encrypt.annotation.Encrypt;
-import com.encrypt.autoconfig.EncryptProperties;
-import com.encrypt.response.ResultData;
-import com.encrypt.utils.AESUtil;
+import com.encrypt.starter.annotation.Encrypt;
+import com.encrypt.starter.config.EncryptProperties;
+import com.encrypt.starter.response.ResultData;
+import com.encrypt.starter.utils.AESUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -26,12 +26,9 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
  */
 
 /**
- * 启用配置属性
- */
-@EnableConfigurationProperties(EncryptProperties.class)
-/**
  * 全局处理加密响应
  */
+@EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
 public class EncryptResponse implements ResponseBodyAdvice<ResultData> {
 

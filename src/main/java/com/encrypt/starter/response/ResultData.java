@@ -1,4 +1,4 @@
-package com.encrypt.response;
+package com.encrypt.starter.response;
 
 /**
  * ClassName: ResultData
@@ -10,7 +10,6 @@ package com.encrypt.response;
  * @Version: v1.0
  */
 
-import com.encrypt.response.ResponseCodeEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 

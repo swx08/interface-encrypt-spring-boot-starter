@@ -1,4 +1,4 @@
-package com.encrypt.response;
+package com.encrypt.starter.response;
 /**
  * ClassName: ResponseCodeEnum
  * Package: org.common.response

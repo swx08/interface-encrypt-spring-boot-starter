@@ -1,8 +1,8 @@
-package com.encrypt.core;
+package com.encrypt.starter.core;
 
-import com.encrypt.annotation.Decrypt;
-import com.encrypt.autoconfig.EncryptProperties;
-import com.encrypt.utils.AESUtil;
+import com.encrypt.starter.annotation.Decrypt;
+import com.encrypt.starter.config.EncryptProperties;
+import com.encrypt.starter.utils.AESUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.core.MethodParameter;
@@ -31,15 +31,15 @@ import java.lang.reflect.Type;
  * 启用EncryptProperties配置属性
  * 作为全局控制器增强，用于处理请求体的解密
  */
-@EnableConfigurationProperties(EncryptProperties.class)
 @ControllerAdvice
+@EnableConfigurationProperties(EncryptProperties.class)
 public class DecryptRequest extends RequestBodyAdviceAdapter {
 
     /**
      * 注入加密配置属性
      */
     @Autowired
-    private EncryptProperties encryptProperties;
+    EncryptProperties encryptProperties;
 
     /**
      * 确定是否支持处理当前请求

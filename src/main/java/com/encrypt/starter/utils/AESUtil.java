@@ -1,4 +1,4 @@
-package com.encrypt.utils;
+package com.encrypt.starter.utils;
 
 /**
  * ClassName: AESUtil
